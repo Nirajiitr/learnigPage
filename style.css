@@ -14,6 +14,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #111;
+    z-index: 5;
 }
 
 .nav-part2 {
@@ -108,6 +109,7 @@ nav:hover .bottom-div{
 
 .highlite-tag {
     display: flex;
+    gap:2vw;
     margin-top: -30px;
 }
 
@@ -123,7 +125,39 @@ nav:hover .bottom-div{
     width: 6vw;
     border-radius: 50%;
 }
+.moving-div{
+   width: 50vw;
+   height: 6vw;
+    margin-top: 5vh;
+    display: flex;
+    gap:2vw;
+    border-radius:2px;
+  overflow: hidden;    
 
+    
+}
+.move{
+    display: flex;
+    align-items: center;
+    gap:2vw;
+    animation-name: movebar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.move img {
+   height: 6vw;
+   border-radius:2px;
+}
+
+@keyframes movebar {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 .page2 {
     height: 100vh;
     width: 100%;
