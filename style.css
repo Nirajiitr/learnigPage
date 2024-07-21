@@ -125,6 +125,19 @@ nav:hover .bottom-div{
     width: 6vw;
     border-radius: 50%;
 }
+.page1 h1 svg:hover{
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+       transform: rotate(360deg);
+    }
+
+}
 .moving-div{
    width: 50vw;
    height: 6vw;
@@ -162,4 +175,112 @@ nav:hover .bottom-div{
     height: 100vh;
     width: 100%;
     background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+   
+}
+.page2-left {
+    background-color: #333;
+    width: 40%;
+    height: 100%;
+    padding: 2vw;
+}
+.page2-right{
+    width: 55%;
+    height: 100%;
+    padding: 2vw;
+    padding-left: 5vw;
+    background-color: #252424;
+}
+.page2-left h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+.page2-left p {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+.page2-left ul {
+    list-style-type: disc;
+    margin-left: 2vw;
+}
+.page2-left li {
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
+}
+.page2-right {
+    width: 45%;
+}
+.page2-right h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+.service {
+    margin-bottom: 1.5vw;
+}
+.service h3 {
+    font-size: 1.8vw;
+    margin-bottom: 0.5vw;
+}
+.service p {
+    font-size: 1.2vw;
+}
+
+
+footer {
+    background-color: #151414;
+    color: #fff;
+    padding: 2vw 5vw;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #323030;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    width: 30%;
+}
+
+.footer-left h3,
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+}
+
+.footer-left p,
+.footer-middle p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1vw;
+}
+
+.social-icons a img {
+    width: 2vw;
+    height: 2vw;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1vw;
+
+}
+
+.footer-bottom p {
+    font-size: 1vw;
 }
